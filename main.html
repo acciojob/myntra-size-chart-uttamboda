@@ -1,16 +1,83 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: right;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid black;
+            
+        }
+        th {
+            background-color: #a83c3c;
+            color: white;
+			
+        }
+        tr:nth-child(2) {
+            background-color: #f5dada;
+        }
+        tr:nth-child(3) {
+            background-color: #efe7e7; 
+        }
+        tr:nth-child(4) {
+            background-color: #f5dada;
+        }
+		.heding{
+			text-align:left;
+		}
+		.tsize{
+			text-align:left;
+		}
+		.color{
+			background-color:#e8bcbc
+		}
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <table>
+        <thead>
+            <tr class="heding">
+                <th>Part</th>
+                <th>XS</th>
+                <th>S</th>
+                <th>M</th>
+                <th>L</th>
+                <th>XL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="color">
+                <td class="tsize">Waist</td>
+                <td>25</td>
+                <td>28</td>
+                <td>30</td>
+                <td>31</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td class="tsize">Chest</td>
+                <td>34</td>
+                <td>34</td>
+                <td>38</td>
+                <td>40</td>
+                <td>41</td>
+            </tr>
+            <tr>
+                <td class="tsize">Sleeve</td>
+                <td>23</td>
+                <td>24</td>
+                <td>24</td>
+                <td>25</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
-
 </html>
